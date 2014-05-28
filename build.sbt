@@ -6,10 +6,12 @@ version := "0.0.1"
 
 scalaVersion := "2.10.3"
 
+resolvers +=
+  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+
 libraryDependencies ++= Seq(
-  "org.scalatest" % "scalatest_2.10" % "2.1.4" % "test" withSources() withJavadoc(),
-  "org.scalacheck" %% "scalacheck" % "1.10.0" % "test" withSources() withJavadoc(),
-  "ru.yandex.qatools.allure" % "allure-scalatest_2.10" % "1.3.8-SNAPSHOT" % "test"
+  "org.scalatest" % "scalatest_2.10" % "2.1.4" % "test",
+  "ru.yandex.qatools.allure" % "allure-scalatest_2.10" % "1.3.9-SNAPSHOT" % "test"
 )
 
 testOptions in Test ++= Seq(
