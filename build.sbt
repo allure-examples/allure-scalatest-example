@@ -11,7 +11,7 @@ resolvers +=
 
 libraryDependencies ++= Seq(
   "org.scalatest" % "scalatest_2.10" % "2.1.4" % "test",
-  "ru.yandex.qatools.allure" % "allure-scalatest_2.10" % "1.3.9-SNAPSHOT" % "test"
+  "ru.yandex.qatools.allure" % "allure-scalatest_2.10" % "1.4.0-SNAPSHOT" % "test"
 )
 
 testOptions in Test ++= Seq(
